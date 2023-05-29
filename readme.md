@@ -18,6 +18,8 @@
 - Dodanie JUnit5 do projektu
 - Wygenerowanie testu dla UserInputCommand
 
+
+
 ## Implementacja obsługi komend
 - Pusta lista commandHandlerów
 - Interfejs CommandHandler
