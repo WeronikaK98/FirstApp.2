@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ee38e9-7b83-4d24-9b16-e2f03058f876" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/WeronikaK98/firstApp/input/UserInputCommandTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/QuitFirstAppException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/BaseCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/HelpCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/QuitCommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,6 +58,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.WeronikaK98.firstApp" />
+      <recent name="pl.WeronikaK98.firstApp.handlers" />
       <recent name="pl.Weronika98.firstApp.input" />
       <recent name="pl.Weronika98.firstApp.model" />
     </key>
@@ -63,7 +70,7 @@
       <recent name="pl.WeronikaK98.firstApp.input" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UserInputCommandTest.shouldBuildCorrectUserInputCommandWithoutParams">
+  <component name="RunManager" selected="Application.FirstApp">
     <configuration name="FirstApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.WeronikaK98.firstApp.FirstApp" />
       <module name="FirstApp" />
@@ -127,10 +134,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FirstApp" />
         <item itemvalue="JUnit.UserInputCommandTest.shouldBuildCorrectUserInputCommandWithoutParams" />
         <item itemvalue="JUnit.UserInputCommandTest.shouldBuildCorrectUserInputCommandWithMultipleParams" />
         <item itemvalue="JUnit.UserInputCommandTest.shouldBuildCorrectUserInputCommand" />
-        <item itemvalue="Application.FirstApp" />
       </list>
     </recent_temporary>
   </component>

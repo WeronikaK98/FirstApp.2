@@ -14,10 +14,10 @@
 - Implementacja UserInputCommand
 - Wyświetlenie UserInputCommand w głównej pętli
 
+
 ## Testy aplikacji i TDD
 - Dodanie JUnit5 do projektu
 - Wygenerowanie testu dla UserInputCommand
-
 
 
 ## Implementacja obsługi komend
@@ -31,16 +31,19 @@
     - log nieznany command handler
     - break głównej pętli
 
+
 ## Komunikacja z systemem plików oraz utrwalenie danych
 - CategoryCommandHandler - szablon
 - Zapis do pliku, komunikacja z DAO, CategoryDao
 - Wypełnienie CategoryCommandHandler
 - Category.toString
 
+
 ## Serializacja obiektów
 - Copy CategoryDao to QuestionDao -> problem z serializacją
     - Zależność jackson-databind
     - Refaktor QuestionDao z jackson
+
 
 ## Refaktoryzacja kodu
 - Wprowadzenie enum Action
@@ -51,6 +54,7 @@
     - Refaktor CategoryDao na jackson
     - Model.Question - default konstruktor dla jackson
 
+
 ## Logi, obsługa wyjątków oraz walidacja danych
 - Dodajemy loggery: do wszystkich klas
 - AnswerCommandHandler kopia z question
@@ -60,6 +64,7 @@
     - Spróbować wprowadzić niepoprawne dane
     - CategoryCommandHandler walidacja parametrów
     - Główna pętla dodatkowy catch na walidację
+
 
 ## Dalszy rozwój aplikacji
 - Brak obsługi spacji
