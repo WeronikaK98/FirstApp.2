@@ -7,7 +7,7 @@ public class ParentProfile {
 
     private String pesel;
 
-    private int age;
+    private String age;
 
     private String adress;
 
@@ -16,7 +16,7 @@ public class ParentProfile {
     public ParentProfile() {
     }
 
-    public ParentProfile(String name, String pesel, int age, String adress) {
+    public ParentProfile(String name, String pesel, String age, String adress) {
         this.name = name;
         this.pesel = pesel;
         this.age = age;
@@ -48,11 +48,11 @@ public class ParentProfile {
         this.pesel = pesel;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 

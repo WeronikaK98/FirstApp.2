@@ -33,10 +33,10 @@
 
 
 ## Komunikacja z systemem plików oraz utrwalenie danych
-- CategoryCommandHandler - szablon
-- Zapis do pliku, komunikacja z DAO, CategoryDao
-- Wypełnienie CategoryCommandHandler
-- Category.toString
+- ParentCommandHandler, ChildCommandHandler - szablon
+- Zapis do pliku, komunikacja z DAO, ParentDao, ChildDao
+- Wypełnienie ParentCommandHandler, ChildCommandHandler
+- Child.toString
 
 
 ## Serializacja obiektów

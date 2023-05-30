@@ -8,16 +8,16 @@ public class Child {
 
     private String pesel;
 
-    private int age;
+    private String age;
 
     private String adress;
 
     private List<Lesson> lessons;
 
-    public Child() {
+    public Child(String line) {
     }
 
-    public Child(String name, String pesel, int age, String adress, List<Lesson> lessons) {
+    public Child(String name, String pesel, String age, String adress) {
         this.name = name;
         this.pesel = pesel;
         this.age = age;
@@ -41,11 +41,11 @@ public class Child {
         this.pesel = pesel;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 
@@ -63,5 +63,16 @@ public class Child {
 
     public void setLessons(List<Lesson> lessons) {
         this.lessons = lessons;
+    }
+
+    @Override
+    public String toString() {
+        return "Child{" +
+                "name='" + name + '\'' +
+                ", pesel='" + pesel + '\'' +
+                ", age='" + age + '\'' +
+                ", adress='" + adress + '\'' +
+                ", lessons=" + lessons +
+                '}';
     }
 }

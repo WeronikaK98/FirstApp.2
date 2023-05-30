@@ -1,8 +1,6 @@
 package pl.WeronikaK98.firstApp;
 
-import pl.WeronikaK98.firstApp.handlers.CommandHandler;
-import pl.WeronikaK98.firstApp.handlers.HelpCommandHandler;
-import pl.WeronikaK98.firstApp.handlers.QuitCommandHandler;
+import pl.WeronikaK98.firstApp.handlers.*;
 import pl.WeronikaK98.firstApp.input.UserInputCommand;
 import pl.WeronikaK98.firstApp.input.UserInputManager;
 
@@ -22,6 +20,8 @@ public class FirstApp {
         List<CommandHandler> handlers = new ArrayList<>();
         handlers.add(new HelpCommandHandler());
         handlers.add(new QuitCommandHandler());
+        handlers.add(new ParentCommandHandler());
+        handlers.add(new ChildCommandHandler());
 
         /**
          * parent add ParentName -> parentAdd(name, pesel, age, adress)
