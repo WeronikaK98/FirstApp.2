@@ -40,26 +40,23 @@
 
 
 ## Serializacja obiektów
-- Copy CategoryDao to QuestionDao -> problem z serializacją
+- Copy ParentDao to ChildDao -> problem z serializacją
     - Zależność jackson-databind
-    - Refaktor QuestionDao z jackson
+    - Refaktor ChildDao z jackson
 
 
 ## Refaktoryzacja kodu
 - Wprowadzenie enum Action
     - Refaktor po wprowadzeniu UserInputCommand.action
-- QuestionCommandHandler
-    - Dodanie CategoryDao i pobrani kategorii
-    - Metoda CategoryDao.findOne
-    - Refaktor CategoryDao na jackson
-    - Model.Question - default konstruktor dla jackson
+- ChildCommandHandler
+    - Dodanie ChildDao i pobranie listy dzieci
+    - Metoda ChildDao.findOne
+    - Refaktor ChildDao na jackson
+    - Model.Child - default konstruktor dla jackson
 
 
 ## Logi, obsługa wyjątków oraz walidacja danych
 - Dodajemy loggery: do wszystkich klas
-- AnswerCommandHandler kopia z question
-    - questionDao.findOne
-    - questionDao.findAnswer
 - validacja parametrów
     - Spróbować wprowadzić niepoprawne dane
     - CategoryCommandHandler walidacja parametrów

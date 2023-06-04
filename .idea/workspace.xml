@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ee38e9-7b83-4d24-9b16-e2f03058f876" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/children.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ChildDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ChildCommandHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ParentCommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/children_lessons.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parents.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/Action.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/LessonDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/LessonCommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/children.txt" beforeDir="false" afterPath="$PROJECT_DIR$/children.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ChildDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ChildDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ChildCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ChildCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/HelpCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/HelpCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ParentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ParentCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/input/UserInputCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/input/UserInputCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/ParentProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/ParentProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Lesson.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +34,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -68,6 +77,9 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Weronika\Desktop\Programowanie\Java\FirstApp New Version\FirstApp" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="pl.WeronikaK98.firstApp.input" />

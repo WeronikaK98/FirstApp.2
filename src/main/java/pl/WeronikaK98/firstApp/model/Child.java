@@ -1,5 +1,6 @@
 package pl.WeronikaK98.firstApp.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Child {
@@ -22,7 +23,7 @@ public class Child {
         this.pesel = pesel;
         this.age = age;
         this.adress = adress;
-        this.lessons = lessons;
+        this.lessons = new ArrayList<>();
     }
 
     public String getName() {

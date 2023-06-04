@@ -9,7 +9,7 @@ public class HelpCommandHandler extends BaseCommandHandler {
     @Override
     public void handle(UserInputCommand command) {
         System.out.println("Help");
-        System.out.println("Allowed commands: help, quit, parent, child, lesson");
+        System.out.println("Allowed commands: help, quit, parent, child, lesson,");
         System.out.println("Command pattern: <command> <action> <param1> <param2> <param3>");
         System.out.println("Example: parent add ParentName");
     }

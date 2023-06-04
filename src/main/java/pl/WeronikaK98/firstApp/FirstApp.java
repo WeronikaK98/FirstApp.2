@@ -8,20 +8,25 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class FirstApp {
+
+    private static Logger LOG = Logger.getLogger(FirstApp.class.getName());
     public static void main(String[] args) {
         new FirstApp().start();
     }
 
     private void start() {
-        System.out.println("Start app");
+        LOG.info("Start app");
 
         List<CommandHandler> handlers = new ArrayList<>();
         handlers.add(new HelpCommandHandler());
         handlers.add(new QuitCommandHandler());
         handlers.add(new ParentCommandHandler());
         handlers.add(new ChildCommandHandler());
+        handlers.add(new LessonCommandHandler());
 
         /**
          * parent add ParentName -> parentAdd(name, pesel, age, adress)
@@ -43,7 +48,7 @@ public class FirstApp {
         while (applicationLoop) {
             try {
                 UserInputCommand userInputCommand = userInputManager.nextCommand();
-                System.out.println(userInputCommand);
+                LOG.info(userInputCommand.toString());
 
                 Optional<CommandHandler> currentHandler = Optional.empty();
                 for (CommandHandler handler : handlers) {
@@ -58,11 +63,15 @@ public class FirstApp {
                         .handle(userInputCommand);
 
             } catch (QuitFirstAppException e) {
-                System.out.println("Quit");
+                LOG.info("Quit");
                 applicationLoop = false;
 
+            } catch (IllegalArgumentException e) {
+                LOG.log(Level.WARNING, "Validation exception " + e.getMessage());
+
+
             } catch (Exception e) {
-                e.printStackTrace();
+                LOG.log(Level.SEVERE, "Unknown error", e);
             }
         }
     }

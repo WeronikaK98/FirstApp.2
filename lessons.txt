@@ -1,0 +1,1 @@
+[{"name":"piano","type":"artisticLesson","limitOfGroup":"1"}]

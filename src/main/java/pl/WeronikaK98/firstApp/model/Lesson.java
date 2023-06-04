@@ -8,13 +8,16 @@ public class Lesson {
 
     private int limitOfGroup;
 
-    public Lesson() {
+    public Lesson(String lessonName, Child child) {
     }
 
     public Lesson(String name, String type, int limitOfGroup) {
         this.name = name;
         this.type = type;
         this.limitOfGroup = limitOfGroup;
+    }
+
+    public Lesson(String lessonName) {
     }
 
     public String getName() {

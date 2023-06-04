@@ -1,6 +1,9 @@
 package pl.WeronikaK98.firstApp.dao;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import pl.WeronikaK98.firstApp.model.Child;
+import pl.WeronikaK98.firstApp.model.Lesson;
 import pl.WeronikaK98.firstApp.model.ParentProfile;
 
 import java.io.IOException;
@@ -9,36 +12,69 @@ import java.nio.file.OpenOption;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
+import java.util.Optional;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class ChildDao {
+
+    private static Logger LOG = Logger.getLogger(ChildDao.class.getName());
+
+    private ObjectMapper objectMapper;
+
+    public ChildDao() {
+        objectMapper = new ObjectMapper();
+    }
+
     public List<Child> findAll() {
+        return getChildren();
+    }
+
+    private List<Child> getChildren() {
         try {
-            List<String> lines = Files.readAllLines(Paths.get("./children.txt"));
-            List<Child> children = new ArrayList<>();
-            for (String line : lines){
-                children.add(new Child(line));
-            }
-
-            return children;
-
+            return objectMapper.readValue(Files.readString(Paths.get("./children.txt")), new TypeReference<>() {
+            });
         } catch (IOException e) {
-            e.printStackTrace();
-            return null;
+            LOG.log(Level.WARNING, "Error on getChildren", e);
+            return new ArrayList<>();
         }
     }
 
     public void add(Child child) {
         try {
-            List<String> lines = Files.readAllLines(Paths.get("./children.txt"));
-            lines.add(child.getName());
-            lines.add(child.getPesel());
-            lines.add(child.getAge());
-            lines.add(child.getAdress());
+            List<Child> children = getChildren();
+            children.add(child);
 
-            Files.writeString(Paths.get("./children.txt"), String.join("\n", lines));
+            saveChild(children);
+
+            objectMapper.writeValueAsString(child);
 
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.log(Level.WARNING, "Error on addChildren", e);
         }
     }
+
+    private void saveChild(List<Child> children) {
+        try {
+            Files.writeString(Paths.get("./children.txt"), objectMapper.writeValueAsString(children));
+        } catch (IOException e) {
+            LOG.log(Level.WARNING, "Error on saveChild", e);
+        }
+    }
+
+    public void addLesson(Child child, Lesson lesson) {
+        List<Child> children = getChildren();
+        for (Child c : children){
+            if (Objects.equals(c.getName(), child.getName())){
+                c.getLessons().add(lesson);
+            }
+        }
+
+        saveChild(children);
+    }
+
+//    public Optional<Object> findOne(String childName) {
+//        return null;
+//    }
 }
