@@ -8,7 +8,11 @@ public class Lesson {
 
     private int limitOfGroup;
 
+    public Lesson() {
+    }
+
     public Lesson(String lessonName, Child child) {
+        this.name = lessonName;
     }
 
     public Lesson(String name, String type, int limitOfGroup) {
@@ -42,5 +46,14 @@ public class Lesson {
 
     public void setLimitOfGroup(int limitOfGroup) {
         this.limitOfGroup = limitOfGroup;
+    }
+
+    @Override
+    public String toString() {
+        return "Lesson{" +
+                "name='" + name + '\'' +
+                ", type='" + type + '\'' +
+                ", limitOfGroup=" + limitOfGroup +
+                '}';
     }
 }

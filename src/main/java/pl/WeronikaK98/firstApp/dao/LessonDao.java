@@ -38,19 +38,19 @@ public class LessonDao {
         }
     }
 
-    public void add(Lesson lesson) {
-        try {
-            List<Lesson> children = getLessons();
-            children.add(lesson);
-
-            Files.writeString(Paths.get("./children_lessons.txt"), objectMapper.writeValueAsString(lesson));
-
-            objectMapper.writeValueAsString(lesson);
-
-        } catch (IOException e) {
-            LOG.log(Level.WARNING, "Error on addLesson", e);
-        }
-    }
+//    public void add(Lesson lesson) {
+//        try {
+//            List<Lesson> children = getLessons();
+//            children.add(lesson);
+//
+//            Files.writeString(Paths.get("./children_lessons.txt"), objectMapper.writeValueAsString(lesson));
+//
+//            objectMapper.writeValueAsString(lesson);
+//
+//        } catch (IOException e) {
+//            LOG.log(Level.WARNING, "Error on addLesson", e);
+//        }
+//    }
 
     public  Optional<Lesson> findOne(String lessonName) {
         return getLessons().stream()

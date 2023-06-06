@@ -63,4 +63,15 @@ public class ParentProfile {
     public void setAdress(String adress) {
         this.adress = adress;
     }
+
+    @Override
+    public String toString() {
+        return "ParentProfile{" +
+                "name='" + name + '\'' +
+                ", pesel='" + pesel + '\'' +
+                ", age='" + age + '\'' +
+                ", adress='" + adress + '\'' +
+                ", children=" + children +
+                '}';
+    }
 }

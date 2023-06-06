@@ -48,7 +48,7 @@ public class ChildDao {
 
             saveChild(children);
 
-            objectMapper.writeValueAsString(child);
+            objectMapper.writeValueAsString(children);
 
         } catch (IOException e) {
             LOG.log(Level.WARNING, "Error on addChildren", e);
@@ -74,7 +74,9 @@ public class ChildDao {
         saveChild(children);
     }
 
-//    public Optional<Object> findOne(String childName) {
-//        return null;
-//    }
+    public Optional<Child> findOne(String childName) {
+        return getChildren().stream()
+                .filter(l -> l.getName().equals(childName))
+                .findAny();
+    }
 }

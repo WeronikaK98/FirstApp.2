@@ -10,6 +10,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -26,6 +27,8 @@ public class ParentDao {
     public List<ParentProfile> findAll() {
         return getParentProfile();
     }
+
+    private Child child;
 
     private List<ParentProfile> getParentProfile() {
         try {
@@ -48,6 +51,15 @@ public class ParentDao {
 
         } catch (IOException e) {
             LOG.log(Level.WARNING, "Error on addParentProfile", e);
+        }
+    }
+
+    public void addChild(ParentProfile parentProfile, Child child) {
+        List<ParentProfile> parentProfiles = getParentProfile();
+        for (ParentProfile p : parentProfiles){
+            if (Objects.equals(p.getName(), parentProfile.getName())){
+                p.getChildren().add(child);
+            }
         }
     }
 }

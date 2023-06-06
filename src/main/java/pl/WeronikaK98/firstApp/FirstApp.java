@@ -34,11 +34,18 @@ public class FirstApp {
          * child list -> childrenList()
          * child add ChildName -> childAdd(name, pesel, age, adress)
          *
-         * quit -> quitApplication()
-         *
-         * lesson list -> lessonList()  [lista wszystkich dostępnych zajęć]
          * lesson list ChildName -> lessonList(ChildName)  [lista zajęć na które zapisane jest dane dziecko]
          * lesson add ChildName LessonName -> lessonAdd(ChildName, LessonName)
+         *
+         * Do przetestowania:
+         *
+         * !!parent add ParentName ParentPesel ParentAge ParentAdress --> utworzenie nowego profilu rodzica
+         * parent newChild ParentName ChildName --> przypisanie profilu dziecka do profilu rodzica
+         *
+         * child list --> lista zapisanych dzieci
+         * child add ChildName ChildPesel ChildAge ChildAdress --> utworzenie nowego profilu dziecka
+         *
+         * lesson childList ChildName --> lista zajęć na które jest zapisane dane dziecko
          */
 
         boolean applicationLoop = true;

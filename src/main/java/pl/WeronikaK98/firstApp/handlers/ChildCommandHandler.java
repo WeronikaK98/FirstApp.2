@@ -66,8 +66,6 @@ public class ChildCommandHandler extends BaseCommandHandler {
             case SIGN_UP:
                 LOG.info("Sign up");
                 // child sign_up ChildName LessonName
-                // TODO validate params
-
                 if (command.getParam().size() != 2){
                     throw new IllegalArgumentException("Wrong command format. Check help for more information");
                 }
@@ -77,6 +75,7 @@ public class ChildCommandHandler extends BaseCommandHandler {
                         .orElseThrow(() -> new IllegalArgumentException("Lesson not found: " + lessonName));
 
                 childDao.addLesson(child, new Lesson(lessonName));
+                break;
 
             default: {
                 throw new IllegalArgumentException(String.format("Unknown action: %s from command: %s",

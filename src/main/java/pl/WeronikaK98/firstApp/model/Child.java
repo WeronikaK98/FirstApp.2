@@ -1,5 +1,7 @@
 package pl.WeronikaK98.firstApp.model;
 
+import pl.WeronikaK98.firstApp.dao.ParentDao;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,6 +18,9 @@ public class Child {
     private List<Lesson> lessons;
 
     public Child(String line) {
+    }
+
+    public Child() {
     }
 
     public Child(String name, String pesel, String age, String adress) {
@@ -76,4 +81,8 @@ public class Child {
                 ", lessons=" + lessons +
                 '}';
     }
+
+//    public ParentDao getParentProfile() {
+//        return null;
+//    }
 }

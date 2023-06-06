@@ -76,3 +76,19 @@
     - Aktualizacja
 - Dodać więcej wyrażeń lambda i strumieni
 - Wprowadzenie warstwy webowej
+
+## Błędy do poprawy
+- parent:
+  - add:
+    - w pliku /parents.txt dane zapisane są w nieprawidłowym formacie 
+  - newChild:
+    - problem z wykryciem imienia dziecka
+
+- child:
+  - add:
+    - zamiast dodać kolejny profil dziecka to nadpisuje poprzedni
+
+- lesson:
+  - childList:
+    - unknown action
+    - funkcja do dodania
