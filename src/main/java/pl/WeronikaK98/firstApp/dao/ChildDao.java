@@ -33,6 +33,7 @@ public class ChildDao {
 
     private List<Child> getChildren() {
         try {
+            Files.readString(Paths.get("./children.txt"));
             return objectMapper.readValue(Files.readString(Paths.get("./children.txt")), new TypeReference<>() {
             });
         } catch (IOException e) {

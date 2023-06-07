@@ -11,6 +11,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -61,5 +62,20 @@ public class ParentDao {
                 p.getChildren().add(child);
             }
         }
+        saveParentProfile(parentProfiles);
+    }
+
+    private void saveParentProfile(List<ParentProfile> parentProfiles) {
+        try {
+            Files.writeString(Paths.get("./parents.txt"), objectMapper.writeValueAsString(parentProfiles));
+        } catch (IOException e) {
+            LOG.log(Level.WARNING, "Error on saveParentProfile", e);
+        }
+    }
+
+    public Optional<ParentProfile> findOne(String parentName) {
+        return getParentProfile().stream()
+                .filter(l -> l.getName().equals(parentName))
+                .findAny();
     }
 }

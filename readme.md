@@ -78,15 +78,14 @@
 - Wprowadzenie warstwy webowej
 
 ## Błędy do poprawy
-- parent:
-  - add:
-    - w pliku /parents.txt dane zapisane są w nieprawidłowym formacie 
+- parent: 
   - newChild:
-    - problem z wykryciem imienia dziecka
+    - po przypisaniu dziecka podawana jest wartość null dla name, pesel, age i adress
 
 - child:
-  - add:
-    - zamiast dodać kolejny profil dziecka to nadpisuje poprzedni
+  - signUp:
+    - SEVERE: Unknown error
+    - Cannot invoke "pl.WeronikaK98.firstApp.model.Child.getName()" because "child" is null
 
 - lesson:
   - childList:

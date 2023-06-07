@@ -51,29 +51,29 @@ public class ParentCommandHandler extends BaseCommandHandler {
                 String line = console.nextLine();
 
                 if (!line.equals("Weronika")) {
-                    System.out.println("Nie znaleziono użytkownika");
-                    System.out.println("Upewnij się, że login jest poprawny");
-                    LOG.log(Level.INFO, "Nieudana próba logowania");
+                    System.out.println("User not found");
+                    System.out.println("Make sure the login is correct");
+                    LOG.log(Level.INFO, "Login attempt failed");
 
                     System.out.println("Login: ");
                     line = console.nextLine();
                 } else {
-                    LOG.log(Level.INFO, "Logowanie użytkownika");
+                    LOG.log(Level.INFO, "User login");
                 }
 
-                System.out.println("Hasło: ");
+                System.out.println("Password: ");
                 line = scanner.nextLine();
 
                 while (!line.equals("1477")) {
-                    System.out.println("Nieprawidłowe hasło");
-                    System.out.println("Spróbuj ponownie");
-                    LOG.log(Level.INFO, "Nieudana próba logowania");
+                    System.out.println("Incorrect password");
+                    System.out.println("Try again");
+                    LOG.log(Level.INFO, "Login attempt failed");
 
-                    System.out.println("Hasło: ");
+                    System.out.println("Password: ");
                     line = scanner.nextLine();
                 }
-                System.out.println("Dzień dobry");
-                LOG.log(Level.INFO, "Logowanie użytkownika");
+                System.out.println("Hello");
+                LOG.log(Level.INFO, "User login");
                 break;
 
             case ADD:
@@ -102,7 +102,12 @@ public class ParentCommandHandler extends BaseCommandHandler {
                 Child child = childDao.findOne(childName)
                         .orElseThrow(() -> new IllegalArgumentException("Child not found: " + childName));
 
+                parentProfile = parentDao.findOne(parentName)
+                        .orElseThrow(() -> new IllegalArgumentException("Parent not found: " + parentName));
+
+                System.out.println("ChildName: " + childName);
                 parentDao.addChild(parentProfile, new Child(childName));
+                break;
 
             default: {
                 throw new IllegalArgumentException(String.format("Unknown action: %s from command: %s",

@@ -7,19 +7,12 @@
     <list default="true" id="93ee38e9-7b83-4d24-9b16-e2f03058f876" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/children.txt" beforeDir="false" afterPath="$PROJECT_DIR$/children.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons.txt" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/children_lessons.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/parents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parents.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/Action.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ChildDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ChildDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/LessonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/LessonDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ChildCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ChildCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/HelpCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/HelpCommandHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ParentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ParentCommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Child.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Lesson.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/ParentProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/ParentProfile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +44,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2QOF9yTwuMv4kSsNPliJHuJeBw2" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -168,5 +161,16 @@
       <updated>1685216577420</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

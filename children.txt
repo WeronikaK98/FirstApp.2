@@ -1,1 +1,1 @@
-[{"name":"x","pesel":"x","age":"x","adress":"x","lessons":[],"parentProfile":null}]
+[{"name":"Maks","pesel":"21233000100","age":"2","adress":"Gdańsk","lessons":[]},{"name":"Zosia","pesel":"22293000200","age":"0","adress":"Gdańsk","lessons":[]},{"name":"Laura","pesel":"21282900300","age":"2","adress":"Pruszcz","lessons":[]}]

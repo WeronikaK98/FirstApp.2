@@ -1,5 +1,6 @@
 package pl.WeronikaK98.firstApp.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ParentProfile {
@@ -25,6 +26,9 @@ public class ParentProfile {
     }
 
     public List<Child> getChildren() {
+        if (children == null) {
+            children = new ArrayList<>();
+        }
         return children;
     }
 
