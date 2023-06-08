@@ -77,7 +77,7 @@ public class ChildDao {
 
     public Optional<Child> findOne(String childName) {
         return getChildren().stream()
-                .filter(l -> l.getName().equals(childName))
+                .filter(c -> c.getName().equals(childName))
                 .findAny();
     }
 }

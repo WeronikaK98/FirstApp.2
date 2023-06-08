@@ -106,7 +106,7 @@ public class ParentCommandHandler extends BaseCommandHandler {
                         .orElseThrow(() -> new IllegalArgumentException("Parent not found: " + parentName));
 
                 System.out.println("ChildName: " + childName);
-                parentDao.addChild(parentProfile, new Child(childName));
+                parentDao.addChild(parentProfile, child);
                 break;
 
             default: {

@@ -78,14 +78,9 @@
 - Wprowadzenie warstwy webowej
 
 ## Błędy do poprawy
-- parent: 
-  - newChild:
-    - po przypisaniu dziecka podawana jest wartość null dla name, pesel, age i adress
-
 - child:
   - signUp:
-    - SEVERE: Unknown error
-    - Cannot invoke "pl.WeronikaK98.firstApp.model.Child.getName()" because "child" is null
+    - nie przypisuje przedmiotu do profilu dziecka
 
 - lesson:
   - childList:

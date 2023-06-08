@@ -6,16 +6,17 @@ public class Lesson {
 
     private String type;
 
-    private int limitOfGroup;
+    private String limitOfGroup;
 
     public Lesson() {
     }
 
     public Lesson(String lessonName, Child child) {
         this.name = lessonName;
+        this.name = child.getName();
     }
 
-    public Lesson(String name, String type, int limitOfGroup) {
+    public Lesson(String name, String type, String limitOfGroup) {
         this.name = name;
         this.type = type;
         this.limitOfGroup = limitOfGroup;
@@ -40,11 +41,11 @@ public class Lesson {
         this.type = type;
     }
 
-    public int getLimitOfGroup() {
+    public String getLimitOfGroup() {
         return limitOfGroup;
     }
 
-    public void setLimitOfGroup(int limitOfGroup) {
+    public void setLimitOfGroup(String limitOfGroup) {
         this.limitOfGroup = limitOfGroup;
     }
 

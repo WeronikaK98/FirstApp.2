@@ -30,6 +30,7 @@ public class LessonDao {
 
     private List<Lesson> getLessons() {
         try {
+            Files.readString(Paths.get("./lessons.txt"));
             return objectMapper.readValue(Files.readString(Paths.get("./lessons.txt")), new TypeReference<>() {
             });
         } catch (IOException e) {
@@ -56,5 +57,27 @@ public class LessonDao {
         return getLessons().stream()
                 .filter(l -> l.getName().equals(lessonName))
                 .findAny();
+    }
+
+    public void add(Lesson lesson) {
+        try {
+            List<Lesson> lessons = getLessons();
+            lessons.add(lesson);
+
+            saveLesson(lessons);
+
+            objectMapper.writeValueAsString(lessons);
+
+        } catch (IOException e) {
+            LOG.log(Level.WARNING, "Error on addLesson", e);
+        }
+    }
+
+    private void saveLesson(List<Lesson> lessons) {
+        try {
+            Files.writeString(Paths.get("./lessons.txt"), objectMapper.writeValueAsString(lessons));
+        } catch (IOException e) {
+            LOG.log(Level.WARNING, "Error on saveLesson", e);
+        }
     }
 }

@@ -46,17 +46,13 @@ public class LessonCommandHandler extends BaseCommandHandler {
                 lessons.forEach(System.out::println);
                 break;
 
-//            case ADD:
-//                System.out.println("Add new ChildrenProfile");
-//                String childName = command.getParam().get(0);
-//                String childPesel = command.getParam().get(1);
-//                String childAge = command.getParam().get(2);
-//                String childAdress = command.getParam().get(3);
-////        List<Lesson> childLesson = command.getParam().get(4);
-//                childDao.add(new Child(childName, childPesel, childAge, childAdress));
-
-
-//                break;
+            case ADD:
+                System.out.println("Add new Lesson");
+                String lessonName = command.getParam().get(0);
+                String lessonType = command.getParam().get(1);
+                String lessonLimitOfGroup = command.getParam().get(2);
+                lessonDao.add(new Lesson(lessonName, lessonType, lessonLimitOfGroup));
+                break;
 
             default: {
                 throw new IllegalArgumentException(String.format("Unknown action: %s from command: %s",

@@ -28,7 +28,7 @@ public class Child {
         this.pesel = pesel;
         this.age = age;
         this.adress = adress;
-        this.lessons = new ArrayList<>();
+        this.lessons = lessons;
     }
 
     public String getName() {
@@ -64,6 +64,9 @@ public class Child {
     }
 
     public List<Lesson> getLessons() {
+        if (lessons == null) {
+            lessons = new ArrayList<>();
+        }
         return lessons;
     }
 

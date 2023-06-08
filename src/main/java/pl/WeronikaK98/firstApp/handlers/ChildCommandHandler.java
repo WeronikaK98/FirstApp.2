@@ -16,14 +16,17 @@ public class ChildCommandHandler extends BaseCommandHandler {
     private static final String COMMAND_NAME = "child";
 
     private ChildDao childDao;
-    private LessonDao lessonDao = new LessonDao();
+    private LessonDao lessonDao;
+
 //    public LessonCommandHandler(){
 //        lessonDao = new LessonDao();
 //    }
-    private Child child;
+    private Child child = new Child();
+    private Lesson lesson = new Lesson();
 
     public ChildCommandHandler() {
         childDao = new ChildDao();
+        lessonDao = new LessonDao();
     }
 
     @Override
@@ -74,7 +77,8 @@ public class ChildCommandHandler extends BaseCommandHandler {
                 Lesson lesson = lessonDao.findOne(lessonName)
                         .orElseThrow(() -> new IllegalArgumentException("Lesson not found: " + lessonName));
 
-                childDao.addLesson(child, new Lesson(lessonName));
+                System.out.println(lessonName);
+                childDao.addLesson(child, lesson);
                 break;
 
             default: {

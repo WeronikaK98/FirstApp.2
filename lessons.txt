@@ -1,6 +1,1 @@
-[{"name":"piano","type":"artisticLesson","limitOfGroup":"1"},
-{"name":"guitar","type":"artisticLesson","limitOfGroup":"1"},
-{"name":"voice","type":"artisticLesson","limitOfGroup":"1"},
-{"name":"dance","type":"artisticLesson","limitOfGroup":"8"},
-{"name":"gymnastic","type":"sportLesson","limitOfGroup":"10"},
-{"name":"acrobatic","type":"sportLesson","limitOfGroup":"10"}]
+[{"name":"piano","type":"artisticLesson","limitOfGroup":"1"},{"name":"guitar","type":"artisticLesson","limitOfGroup":"1"},{"name":"voice","type":"artisticLesson","limitOfGroup":"1"},{"name":"dance","type":"artisticLesson","limitOfGroup":"8"},{"name":"gymnastic","type":"sportLesson","limitOfGroup":"10"},{"name":"acrobatic","type":"sportLesson","limitOfGroup":"10"},{"name":"violin","type":"artistic","limitOfGroup":"1"},{"name":"violin","type":"artistic","limitOfGroup":"1"}]
