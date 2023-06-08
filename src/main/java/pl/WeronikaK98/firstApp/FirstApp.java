@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 public class FirstApp {
 
     private static Logger LOG = Logger.getLogger(FirstApp.class.getName());
+
     public static void main(String[] args) {
         new FirstApp().start();
     }

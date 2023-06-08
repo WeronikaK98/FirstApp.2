@@ -2,7 +2,6 @@ package pl.WeronikaK98.firstApp.dao;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import pl.WeronikaK98.firstApp.model.Child;
 import pl.WeronikaK98.firstApp.model.Lesson;
 
 import java.io.IOException;
@@ -39,21 +38,7 @@ public class LessonDao {
         }
     }
 
-//    public void add(Lesson lesson) {
-//        try {
-//            List<Lesson> children = getLessons();
-//            children.add(lesson);
-//
-//            Files.writeString(Paths.get("./children_lessons.txt"), objectMapper.writeValueAsString(lesson));
-//
-//            objectMapper.writeValueAsString(lesson);
-//
-//        } catch (IOException e) {
-//            LOG.log(Level.WARNING, "Error on addLesson", e);
-//        }
-//    }
-
-    public  Optional<Lesson> findOne(String lessonName) {
+    public Optional<Lesson> findOne(String lessonName) {
         return getLessons().stream()
                 .filter(l -> l.getName().equals(lessonName))
                 .findAny();

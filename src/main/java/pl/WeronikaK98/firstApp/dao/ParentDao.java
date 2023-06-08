@@ -58,8 +58,8 @@ public class ParentDao {
 
     public void addChild(ParentProfile parentProfile, Child child) {
         List<ParentProfile> parentProfiles = getParentProfile();
-        for (ParentProfile p : parentProfiles){
-            if (Objects.equals(p.getName(), parentProfile.getName())){
+        for (ParentProfile p : parentProfiles) {
+            if (Objects.equals(p.getName(), parentProfile.getName())) {
                 p.getChildren().add(child);
             }
         }

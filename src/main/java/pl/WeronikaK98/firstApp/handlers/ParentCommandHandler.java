@@ -4,10 +4,8 @@ import pl.WeronikaK98.firstApp.dao.ChildDao;
 import pl.WeronikaK98.firstApp.dao.ParentDao;
 import pl.WeronikaK98.firstApp.input.UserInputCommand;
 import pl.WeronikaK98.firstApp.model.Child;
-import pl.WeronikaK98.firstApp.model.Lesson;
 import pl.WeronikaK98.firstApp.model.ParentProfile;
 
-import java.util.List;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -37,8 +35,7 @@ public class ParentCommandHandler extends BaseCommandHandler {
         if (command.getAction() == null) {
             throw new IllegalArgumentException("Action can't be null");
         }
-        // parent login
-        // parent add
+
         switch (command.getAction()) {
             case LOGIN:
                 LOG.info("Login");
@@ -93,7 +90,6 @@ public class ParentCommandHandler extends BaseCommandHandler {
             case NEW_CHILD:
                 LOG.info("Assign a child profile");
 
-                // parent newChild ParentName ChildName
                 if (command.getParam().size() != 2) {
                     throw new IllegalArgumentException("Wrong command format. Check help for more information");
                 }
@@ -105,7 +101,6 @@ public class ParentCommandHandler extends BaseCommandHandler {
                 parentProfile = parentDao.findOne(parentName)
                         .orElseThrow(() -> new IllegalArgumentException("Parent not found: " + parentName));
 
-                System.out.println("ChildName: " + childName);
                 parentDao.addChild(parentProfile, child);
                 break;
 

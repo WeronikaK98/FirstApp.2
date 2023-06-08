@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="93ee38e9-7b83-4d24-9b16-e2f03058f876" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/children.txt" beforeDir="false" afterPath="$PROJECT_DIR$/children.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parents.txt" beforeDir="false" afterPath="$PROJECT_DIR$/parents.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/Action.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/Action.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/FirstApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ChildDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ChildDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/LessonDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/LessonDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/dao/ParentDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ChildCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ChildCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/CommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/LessonCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/LessonCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ParentCommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/handlers/ParentCommandHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/input/UserInputCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/input/UserInputCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/WeronikaK98/firstApp/model/Child.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

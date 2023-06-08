@@ -17,10 +17,6 @@ public class ChildCommandHandler extends BaseCommandHandler {
 
     private ChildDao childDao;
     private LessonDao lessonDao;
-
-//    public LessonCommandHandler(){
-//        lessonDao = new LessonDao();
-//    }
     private Child child = new Child();
     private Lesson lesson = new Lesson();
 
@@ -36,16 +32,15 @@ public class ChildCommandHandler extends BaseCommandHandler {
 
     @Override
     public void handle(UserInputCommand command) {
-        if (command.getAction()==null){
+        if (command.getAction() == null) {
             throw new IllegalArgumentException("Action can't be null");
         }
-        //child list
-        // child add ChildName
+
         switch (command.getAction()) {
             case LIST:
                 LOG.info("List of children");
 
-                if (!command.getParam().isEmpty()){
+                if (!command.getParam().isEmpty()) {
                     throw new IllegalArgumentException("child list doesn't support any additional params");
                 }
                 List<Child> children = childDao.findAll();
@@ -55,21 +50,21 @@ public class ChildCommandHandler extends BaseCommandHandler {
             case ADD:
                 LOG.info("Add new ChildrenProfile");
 
-                if (command.getParam().size() != 4){
+                if (command.getParam().size() != 4) {
                     throw new IllegalArgumentException("Wrong command format. Check help for more information");
                 }
                 String childName = command.getParam().get(0);
                 String childPesel = command.getParam().get(1);
                 String childAge = command.getParam().get(2);
                 String childAdress = command.getParam().get(3);
-//        List<Lesson> childLesson = command.getParam().get(4);
+
                 childDao.add(new Child(childName, childPesel, childAge, childAdress));
                 break;
 
             case SIGN_UP:
                 LOG.info("Sign up");
-                // child sign_up ChildName LessonName
-                if (command.getParam().size() != 2){
+
+                if (command.getParam().size() != 2) {
                     throw new IllegalArgumentException("Wrong command format. Check help for more information");
                 }
                 childName = command.getParam().get(0);
@@ -80,7 +75,6 @@ public class ChildCommandHandler extends BaseCommandHandler {
                 child = childDao.findOne(childName)
                         .orElseThrow(() -> new IllegalArgumentException("Child not found: " + childName));
 
-                System.out.println(lessonName);
                 childDao.addLesson(child, lesson);
                 break;
 

@@ -13,10 +13,6 @@ public class UserInputCommand {
 
     private List<String> param;
 
-    // lesson list
-    // lesson list ChildName
-    // lesson add ChildName LessonName
-
     public UserInputCommand(String line) {
         if (line != null) {
             String[] array = line.split("\\s");

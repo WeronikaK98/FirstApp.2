@@ -3,7 +3,6 @@ package pl.WeronikaK98.firstApp.handlers;
 import pl.WeronikaK98.firstApp.dao.ChildDao;
 import pl.WeronikaK98.firstApp.dao.LessonDao;
 import pl.WeronikaK98.firstApp.input.UserInputCommand;
-import pl.WeronikaK98.firstApp.model.Child;
 import pl.WeronikaK98.firstApp.model.Lesson;
 
 import java.util.List;
@@ -15,7 +14,6 @@ public class LessonCommandHandler extends BaseCommandHandler {
 
     private static final String COMMAND_NAME = "lesson";
 
-//    private ChildDao childDao;
     private LessonDao lessonDao;
     private ChildDao childDao;
 
@@ -30,16 +28,15 @@ public class LessonCommandHandler extends BaseCommandHandler {
 
     @Override
     public void handle(UserInputCommand command) {
-        if (command.getAction()==null){
+        if (command.getAction() == null) {
             throw new IllegalArgumentException("Action can't be null");
         }
-        //lesson list
 
         switch (command.getAction()) {
             case LIST:
                 LOG.info("List of lessons");
 
-                if (!command.getParam().isEmpty()){
+                if (!command.getParam().isEmpty()) {
                     throw new IllegalArgumentException("lesson list doesn't support any additional params");
                 }
                 List<Lesson> lessons = lessonDao.findAll();

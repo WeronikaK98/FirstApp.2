@@ -4,11 +4,9 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import pl.WeronikaK98.firstApp.model.Child;
 import pl.WeronikaK98.firstApp.model.Lesson;
-import pl.WeronikaK98.firstApp.model.ParentProfile;
 
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.OpenOption;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
@@ -66,8 +64,8 @@ public class ChildDao {
 
     public void addLesson(Child child, Lesson lesson) {
         List<Child> children = getChildren();
-        for (Child c : children){
-            if (Objects.equals(c.getName(), child.getName())){
+        for (Child c : children) {
+            if (Objects.equals(c.getName(), child.getName())) {
                 c.getLessons().add(lesson);
             }
         }
