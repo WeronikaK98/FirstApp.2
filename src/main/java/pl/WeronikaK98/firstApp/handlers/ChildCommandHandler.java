@@ -77,6 +77,9 @@ public class ChildCommandHandler extends BaseCommandHandler {
                 Lesson lesson = lessonDao.findOne(lessonName)
                         .orElseThrow(() -> new IllegalArgumentException("Lesson not found: " + lessonName));
 
+                child = childDao.findOne(childName)
+                        .orElseThrow(() -> new IllegalArgumentException("Child not found: " + childName));
+
                 System.out.println(lessonName);
                 childDao.addLesson(child, lesson);
                 break;

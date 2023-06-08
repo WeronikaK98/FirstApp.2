@@ -78,10 +78,6 @@
 - Wprowadzenie warstwy webowej
 
 ## Błędy do poprawy
-- child:
-  - signUp:
-    - nie przypisuje przedmiotu do profilu dziecka
-
 - lesson:
   - childList:
     - unknown action
